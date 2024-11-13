@@ -36,5 +36,56 @@
     </h2>
     <h1>13. What is  git push --set-upstream GIT master ?</h1>
     <h2>The command git push --set-upstream GIT master is used to push a local branch to a remote repository and set it up so that future pushes to this branch are associated with the specified remote repository and branch.</h2>
+    <h1># GIT CREATION</h1>
+    <h2>echo "# GIT" >> README.md <br>
+        git init <br>
+        git add README.md<br>
+        git commit -m "first commit"<br>
+        git branch -M main<br>
+        git remote add origin https://github.com/Sujan2332/GIT.git<br>
+        git push -u origin main</h2>
+    <h1># GIT UPDATION</h1>
+    <h2>git status <br>
+        git add .<br>
+        git commit -m "Message"<br>
+        git push -u origin main  </h2>
+    <h1># GIT LIVE WEBSITE HOSTING</h1>
+    <h2><strong>Option 1:</strong> (for basic html and css files)<br>
+        <br>
+        git add .<br>
+        git commit -m "Add website content"<br>
+        git push origin main<br>
+        <br>
+        <ul>
+            <li>Go to your repository on GitHub.</li>
+            <li>Go to the "Settings" tab.</li>
+            <li>Scroll down to "Pages" in the sidebar on the left.</li>
+            <li>Under "Source", select the branch you want to publish. For example, you can select main or master as the source, and specify the root directory or /docs folder as the location.</li>
+            <li>Click "Save". After a few moments, your website will be live at https://username.github.io/repository-name</li>
+        </ul>
+        <br>
+            <strong>Option 2:</strong>  (gh-pages (for react and node files))<br>
+        <br>
+        <ul>
+            <li>Install the gh-pages package (run this command in the root directory of your project):<br>
+                <br>
+                <span>npm install --save-dev gh-pages</span><br></li>
+            <li> Configure your package.json file:<br>
+                <br>
+                Add a homepage field with the URL of your GitHub Pages site:<br>
+                <span>"homepage": "https://username.github.io/repository-name"</span><br></li>
+            <li>Add deploy scripts under "scripts":<br>
+                <br>
+                <span>"scripts": {<br>
+                  "predeploy": "npm run build", // Builds the project<br>
+                  "deploy": "gh-pages -d build" // Deploys the build folder<br>
+                }</span></li>
+            <li>Deploy your site:<br>
+                <br>
+                <span>npm run deploy</span><br>
+                This command will build your project and publish the build directory to a gh-pages branch.<br></li>
+            <li>Access your website at <span>https://username.github.io/repository-name</span></li>
+        </ul>
+        
 </body>
 </html>

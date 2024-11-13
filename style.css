@@ -18,3 +18,12 @@ h3{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+strong{
+    text-decoration: underline;
+}
+li{
+    margin-bottom: 20px;
+}
+span{
+    color: blue;
+}

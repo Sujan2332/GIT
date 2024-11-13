@@ -13,16 +13,28 @@
     <h1>2. What is Github ?</h1>
     <h2>Github is a developer storage platform that allows developers to create, store, manage and share their code and allows developers to work together. It uses Git Software, which provides distributed version control of access control, bug tracking, software feature requests, task managemnet, continous integration for every project </h2>
     <h1>3. What is git init ?</h1>
-    <h2>The git init command creates a new Git repository.It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project</h2>
+    <h2>The git init command creates a new Git repository.It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project <br>Or <br>Initializes a new Git repository in the current directory. This creates a hidden .git folder, which tracks changes in the project.</h2>
     <h1>4. What is git status ?</h1>
     <h2>The git status command displays the state of the working directory and the staging area, It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.</h2>
     <h1>5. What is git add ?</h1>
     <h2>The git add command adds a change in the working directory to the staging area, It tells Git that you want to include updates to a particular file in the next commit.</h2>
     <h1>6. What is the use of git commit ?</h1>
-    <h2>The "commit" command is used to save your changes to the local repository</h2>
+    <h2>The "commit" command is used to save your changes to the local repository <br>Or <br>Commits the changes in the staging area to the repository with a message "first commit". This snapshot of the project can be referenced later. <br>git commit -m "first commit"</h2>
     <h1>7. What is git restore ?</h1>
     <h2>git restore is used to get back the files from staging area <br> git restore --staged filename<br>also used to restore uncommited chnages <br>git restore filename</filename></h2>
     <h1>8. What is git log ?</h1>
     <h2>It displays the commit history,<br>git log <br>git log --oneline (breif history) </h2>
+    <h1>9. What is git branch -M main ?</h1>
+    <h2>Renames the default branch to main. -M is a forced rename flag, often used to switch the default branch from master to main.</h2>
+    <h1>10. What is git remote add origin https://github.com/usename/repository.git ?</h1>
+    <h2>Sets up a remote repository named origin with the specified URL. This allows you to push and pull changes from GitHub. <br>git remote add origin https://github.com/Sujan2332/GIT.git</h2>
+    <h1>11. What is git push -u origin main ?</h1>
+    <h2>Pushes the local main branch to the origin remote repository on GitHub. The -u flag sets up origin/main as the default upstream branch, so future pushes can be done with just git push.</h2>
+    <h1>12. What is git config ?</h1>
+    <h2>git config is a command in Git used to set configuration options that control Git's behavior, including user information, repository settings, and preferences. <br>git config --global user.name "Your Name"<br>
+        git config --global user.email "your.email@example.com"
+    </h2>
+    <h1>13. What is  git push --set-upstream GIT master ?</h1>
+    <h2>The command git push --set-upstream GIT master is used to push a local branch to a remote repository and set it up so that future pushes to this branch are associated with the specified remote repository and branch.</h2>
 </body>
 </html>

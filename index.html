@@ -47,9 +47,81 @@
     <h1>15.What is git clone ?</h1>
     <h2>git clone is used to copy the remote/global repository to the local repository <br>https://github.com/username/repository-name.git</h2>
     <h1>16. What is git branch ?</h1>
-    <h2>git branch is ised to create the branches, to dlete the branches and to list out the available branches <br><br>git branch <br>git branch branchname <br>git branch -d branchname</h2>
+    <h2>git branch is ised to create the branches, to dlete the branches and to list out the available branches <br><br>git branch <br>git branch branchname <br>git branch -d branchname <br>
+        <br><strong>git branch commands :</strong><br>
+        <br>1. List all branches <br>
+git branch<br>
+Definition: Shows all branches in the repository. The current branch is highlighted with an asterisk (*).<br>
+<br>
+2. Create a new branch<br>
+git branch branch_name<br>
+Definition: Creates a new branch with the specified name. This doesn’t switch to the new branch immediately.<br>
+<br>
+3. Switch to a branch<br>
+git checkout branch_name<br>
+or<br>
+git switch branch_name<br>
+Definition: Switches to the specified branch, making it the current working branch.<br>
+<br>
+4. Create and switch to a new branch<br>
+git checkout -b branch_name<br>
+or<br>
+git switch -c branch_name<br>
+Definition: Creates a new branch and switches to it immediately, combining the branch creation and switch steps.<br>
+<br>
+5. Rename a branch<br>
+git branch -m new_branch_name<br>
+Definition: Renames the current branch to a new name. To rename another branch, add the old name as an argument (e.g., git branch -m old_name new_name).<br>
+<br>
+6. Delete a branch<br>
+git branch -d branch_name<br>
+Definition: Deletes the specified branch if it has already been merged. Use -D to force delete if the branch hasn’t been merged.<br>
+<br>
+7. List all remote branches<br>
+git branch -r<br>
+Definition: Shows branches that are on the remote repository, but not locally.<br>
+<br>
+8. List all branches (local and remote)<br>
+git branch -a<br>
+Definition: Displays both local and remote branches.<br>
+<br>
+9. Push a new local branch to remote<br>
+git push -u origin branch_name<br>
+Definition: Pushes a local branch to the remote repository and sets it to track the remote branch, so future pushes can be done with just git push.<br>
+<br>
+10. Merge a branch into the current branch<br><br>
+git merge branch_name<br>
+Definition: Merges the specified branch into the current branch. Often used after switching to a branch (e.g., main) and merging changes from another branch.<br>
+<br>
+11. See the last commit on each branch<br>
+git branch -v<br>
+Definition: Lists all branches and shows the most recent commit message on each.<br>
+
+    </h2>
     <h1>17. What is git checkout ?</h1>
     <h2>git checkout is used to change the branch. Also we can create and chnage the branch at a time. <br> <br>git checkout branchname <br>git checkout -b branchname</h2>
+    <h1>18. What is git pull ?</h1>
+    <h2>git pull is used to take the code form the remote repo to local repo. <br>The git pull command is used to get updates from the remote repo <br>git pull origin branchname </h2>
+    <h1>19. What is git revert ?</h1>
+    <h2>In Git, revert is a command used to create a new commit that undoes the changes made by a previous commit. This is particularly useful when you want to reverse changes without rewriting the commit history (unlike git reset, which changes history).
+        <br><br>        The git revert command essentially “undoes” a commit by applying the inverse of the changes introduced in that commit and recording this inverse change as a new commit. This means the original commit remains in the history, and a new commit is created to negate it.
+        <br><br>Basic Syntax <br><br>
+        1. Revert a single commit:<br>
+        git revert commit_hash<br>
+        This will create a new commit that undoes the changes of the specified commit.<br>
+        <br>
+        2. Revert multiple commits:<br>
+        git revert commit_hash_1 commit_hash_2 ...<br>
+        This reverts each specified commit individually.<br>
+        <br>
+        3. Revert a range of commits:<br>
+        git revert <oldest_commit_hash>..<newest_commit_hash><br>
+        This will revert all commits in the specified range, one by one.<br>
+        <br>
+        4. Abort the revert if conflicts arise:<br>
+        git revert --abort<br>
+        This undoes a revert that encountered conflicts, allowing you to start fresh.<br>
+    </h2>
     <h1># GIT CREATION</h1>
     <h2>echo "# GIT" >> README.md <br>
         git init <br>
